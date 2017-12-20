@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PopupDemo", "PopupDemo\PopupDemo.csproj", "{99B14EC1-BD87-49FC-9252-EC7EC829735D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfControlDemoApp", "WpfControlDemoApp\WpfControlDemoApp.csproj", "{330148BC-6F63-4871-A697-85059631EB23}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{99B14EC1-BD87-49FC-9252-EC7EC829735D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99B14EC1-BD87-49FC-9252-EC7EC829735D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99B14EC1-BD87-49FC-9252-EC7EC829735D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99B14EC1-BD87-49FC-9252-EC7EC829735D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{330148BC-6F63-4871-A697-85059631EB23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{330148BC-6F63-4871-A697-85059631EB23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{330148BC-6F63-4871-A697-85059631EB23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{330148BC-6F63-4871-A697-85059631EB23}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {07F59138-F8E3-4AA4-8273-52F94BFAA4B1}
+	EndGlobalSection
+EndGlobal

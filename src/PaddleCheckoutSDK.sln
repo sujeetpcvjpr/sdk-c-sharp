@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaddleCheckoutSDK", "PaddleCheckoutSDK\PaddleCheckoutSDK.csproj", "{F79ECDDC-70B2-49C3-8456-54942751DCF9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestJsonParse", "UnitTestJsonParse\UnitTestJsonParse.csproj", "{0AD81A90-9807-4C60-A8E1-0E451D2554C9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{74D38D54-0B86-4729-BA85-680F20E729CB}"
+	ProjectSection(SolutionItems) = preProject
+		..\README.md = ..\README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F79ECDDC-70B2-49C3-8456-54942751DCF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F79ECDDC-70B2-49C3-8456-54942751DCF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F79ECDDC-70B2-49C3-8456-54942751DCF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F79ECDDC-70B2-49C3-8456-54942751DCF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0AD81A90-9807-4C60-A8E1-0E451D2554C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AD81A90-9807-4C60-A8E1-0E451D2554C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AD81A90-9807-4C60-A8E1-0E451D2554C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AD81A90-9807-4C60-A8E1-0E451D2554C9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {36723021-C731-441B-974B-EDBAE98539E1}
+	EndGlobalSection
+EndGlobal

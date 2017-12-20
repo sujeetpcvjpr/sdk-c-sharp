@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Paddle.PaddleCheckoutSDK</id>
+    <version>1.0.5-prerelease</version>
+    <title>Paddle Windows Checkout SDK</title>
+    <authors>Paddle</authors>
+    <owners>Paddle</owners>
+    <licenseUrl>http://paddle.com/docs</licenseUrl>
+    <projectUrl>https://paddle.com/docs/introduction-windows-csharp</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Simple Paddle Checkout SDK for Windows</description>
+    <releaseNotes>Initial release.</releaseNotes>
+    <copyright>paddle.com Copyright 2017</copyright>
+    <tags>checkout</tags>
+    <dependencies>
+      <dependency id="Newtonsoft.Json" version="10.0.3"  />
+    </dependencies>
+
+  </metadata>
+</package>
