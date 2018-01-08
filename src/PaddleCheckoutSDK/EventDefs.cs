@@ -62,6 +62,7 @@ namespace PaddleCheckoutSDK
         /// Transaction id
         /// </summary>
         public string ID { get; set; }
+        public string Url { get; set; }
 
         public override string ToString()
         {
@@ -70,7 +71,7 @@ namespace PaddleCheckoutSDK
             sb.AppendFormat("ID: {0}" , ID + Environment.NewLine); 
             sb.AppendFormat("UserEmail: {0}", UserEmail + Environment.NewLine);
             sb.AppendFormat("UserCountry: {0}", UserContry + Environment.NewLine);
-
+            sb.AppendFormat("URL: {0}", Url + Environment.NewLine);
             return sb.ToString();
         }
     }
