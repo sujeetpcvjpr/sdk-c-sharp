@@ -368,13 +368,8 @@ namespace PaddleCheckoutSDK
                 }
                
             }
-            //new added by sujeet here
             else if (e.Url.ToString().ToLower().Contains("paypal.com"))
-            {
-                Debug.WriteLine("Checkout.PaymentMethodSelected:Paypal");
-
-                //GetFormInfo(e);
-
+            {                 
                 PageSubmittedEventArgs pageArgs = new PageSubmittedEventArgs()
                 {
                     PageName = "Checkout.PaymentMethodSelected:Paypal",
