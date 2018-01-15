@@ -369,17 +369,24 @@ namespace PaddleCheckoutSDK
                
             }
             else if (e.Url.ToString().ToLower().Contains("paypal.com"))
-            {                 
-                PageSubmittedEventArgs pageArgs = new PageSubmittedEventArgs()
+            {
+                if (e.Url != null)
                 {
-                    PageName = "Checkout.PaymentMethodSelected:Paypal",
-                    UserEmail = checkoutControl.UserSubmittedEmail,
-                    ID = UserID,
-                    UserContry = checkoutControl.UserCountry,
-                    Url = e.Url.ToString()
-                };
+                    if (openPaypalUrl(e.Url.ToString()))
+                    {
+                        PageSubmittedEventArgs pageArgs = new PageSubmittedEventArgs()
+                        {
+                            PageName = "Checkout.PaypalLoaded.CloseSDK",
+                            UserEmail = checkoutControl.UserSubmittedEmail,
+                            ID = UserID,
+                            UserContry = checkoutControl.UserCountry,
+                            Url = e.Url.ToString()
+                        };
 
-                checkoutControl.FirePageSubmittedEvent(pageArgs);
+                        checkoutControl.FirePageSubmittedEvent(pageArgs);
+                    }
+                }
+                
             }
         }
 
@@ -536,5 +543,16 @@ namespace PaddleCheckoutSDK
                 InvokeScript();
             }
        }
+
+        private bool openPaypalUrl(string url)
+        {
+            bool _WebLoaded = false;            
+            if (!string.IsNullOrEmpty(url))
+            {
+                System.Diagnostics.Process.Start(url);
+                _WebLoaded = true;
+            }
+            return _WebLoaded;
+        }
     }
 }
