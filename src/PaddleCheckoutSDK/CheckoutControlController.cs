@@ -370,23 +370,20 @@ namespace PaddleCheckoutSDK
             }
             else if (e.Url.ToString().ToLower().Contains("paypal.com"))
             {
-                if (e.Url != null)
+                if (openPaypalUrl(e.Url.ToString()))
                 {
-                    if (openPaypalUrl(e.Url.ToString()))
+                    PageSubmittedEventArgs pageArgs = new PageSubmittedEventArgs()
                     {
-                        PageSubmittedEventArgs pageArgs = new PageSubmittedEventArgs()
-                        {
-                            PageName = "Checkout.PaypalLoaded.CloseSDK",
-                            UserEmail = checkoutControl.UserSubmittedEmail,
-                            ID = UserID,
-                            UserContry = checkoutControl.UserCountry,
-                            Url = e.Url.ToString()
-                        };
+                        PageName = "Checkout.PaypalLoaded.CloseSDK",
+                        UserEmail = checkoutControl.UserSubmittedEmail,
+                        ID = UserID,
+                        UserContry = checkoutControl.UserCountry,
+                        Url = e.Url.ToString()
+                    };
 
-                        checkoutControl.FirePageSubmittedEvent(pageArgs);
-                    }
+                    checkoutControl.FirePageSubmittedEvent(pageArgs);
                 }
-                
+
             }
         }
 
