@@ -142,7 +142,7 @@ namespace PaddleCheckoutSDK
 
         private void WebBrowser_CheckoutClosed(object sender, EventArgs e)
         {
-            CheckoutClosed?.Invoke(sender, e);
+            CheckoutClosed?.Invoke(sender, e);            
             this.Close();
         }
 
